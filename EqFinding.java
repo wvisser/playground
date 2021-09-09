@@ -1,4 +1,4 @@
-public class EqTest {
+public class EqFinding {
     public boolean eqOp() {
         String s = "abc";
         if (s != null) { //should not flag
