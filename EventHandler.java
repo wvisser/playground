@@ -161,7 +161,7 @@ public class EventHandler implements RequestHandler<ScheduledEvent, String> {
                 return false;
             }
         }
-        return false;
+        return true;
     }
     
     public static AmazonS3 getS3Client() {
