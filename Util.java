@@ -16,7 +16,7 @@ public class Util {
     }
 
     //try to get a code-guru comment
-    public static String getString(String input) {
+    private static String getString(@Nullable String input) {
         java.util.ArrayList unusedList1 = new java.util.ArrayList();
         java.util.ArrayList unusedList2 = new java.util.ArrayList();
         String abcdefg = input;
@@ -25,4 +25,13 @@ public class Util {
         return "1"+"2";
     }
     
+    //try to get a code-guru comment
+    private static String getString1() {
+        java.util.ArrayList unusedList1 = new java.util.ArrayList();
+        java.util.ArrayList unusedList2 = new java.util.ArrayList();
+        String abcdefg = null;
+        //expect code-guru comment here
+        System.out.println(abcdefg.length());
+        return "1"+"2";
+    }
 }
