@@ -16,7 +16,7 @@ public class Util {
     }
 
     //try to get a code-guru comment
-    private static String getString(String input) {
+    public static String getString(String input) {
         java.util.ArrayList unusedList1 = new java.util.ArrayList();
         java.util.ArrayList unusedList2 = new java.util.ArrayList();
         String abcdefg = input;
