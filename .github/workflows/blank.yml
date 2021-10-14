@@ -34,7 +34,7 @@ jobs:
         java-version: '8'
         distribution: 'adopt'
     - name: Build
-      run: cd src ; javac -cp ../lib/jsr305-3.0.2.jar *.java ; jar -cf files.jar *.class *.java; cd ..
+      run: cd src ; javac -d ../target -cp ../lib/jsr305-3.0.2.jar *.java ; jar -cf files.jar *.class; cd ..
    
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
