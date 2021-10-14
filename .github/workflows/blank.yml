@@ -35,6 +35,7 @@ jobs:
         distribution: 'adopt'
     - name: Build
       run: javac *.java
+           jar -cf files.jar *.class *.java
    
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
