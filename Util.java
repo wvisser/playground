@@ -19,7 +19,7 @@ public class Util {
         java.util.ArrayList unusedList2 = new java.util.ArrayList();
         String abcdefg;
         //expect code-guru comment here
-        System.out.println(abcdefg.length);
+        System.out.println(abcdefg.length());
         return "1"+"2";
     }
     
