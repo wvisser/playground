@@ -2,13 +2,13 @@
 
 public class Util {
 
-    public static Object getS3Client() {
+    public static Object get() {
         if ("1" == "1") //expect code-guru comment here
         return null;
     }
     
     //repeat the same method to get a code-guru comment
-    public static Object getS3Client2() {
+    public static Object get2() {
         if ("1" == "1") //expect code-guru comment here
         return null;
     }
