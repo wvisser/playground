@@ -34,4 +34,8 @@ public class Util {
         System.out.println(abcdefg.length());
         return "1"+"2";
     }
+
+    public void test01() throws Exception {
+        System.setProperty("smtp.password", "hardcoded");
+    }
 }
