@@ -34,7 +34,7 @@ jobs:
         java-version: '8'
         distribution: 'adopt'
     - name: Build
-      run: javac *.java; jar -cf files.jar *.class *.java
+      run: cd src ; javac -cp ../lib/jsr305-3.0.2.jar *.java ; jar -cf files.jar *.class *.java
    
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
@@ -48,7 +48,7 @@ jobs:
       uses: aws-actions/codeguru-reviewer@v1.1
       if: ${{ always() }} 
       with:
-        build_path: . # build artifact(s) directory
+        build_path: src # build artifact(s) directory
         s3_bucket: codeguru-reviewer-willem  # S3 Bucket with "codeguru-reviewer-*" prefix
     
     - name: Upload review result
