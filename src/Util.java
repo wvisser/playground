@@ -34,6 +34,16 @@ public class Util {
         System.out.println(abcdefg.length());
         return "1"+"2";
     }
+    
+    //try to get a code-guru comment
+    private static String getString2() {
+        java.util.ArrayList unusedList1 = new java.util.ArrayList();
+        java.util.ArrayList unusedList2 = new java.util.ArrayList();
+        Object abcdefg = null;
+        //expect code-guru comment here
+        System.out.println(abcdefg.toString());
+        return "1"+"2";
+    }
 
     public void test01() throws Exception {
         System.setProperty("smtp.password", "hardcoded");
