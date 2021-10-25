@@ -15,6 +15,10 @@ public class Util {
         return null;
     }
 
+    public void test03() throws Exception {
+        System.setProperty("smtp.password", "hardcoded");
+    }
+    
     //try to get a code-guru comment
     private static String getString(@Nullable String input) {
         java.util.ArrayList unusedList1 = new java.util.ArrayList();
