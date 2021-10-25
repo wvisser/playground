@@ -48,4 +48,8 @@ public class Util {
     public void test01() throws Exception {
         System.setProperty("smtp.password", "hardcoded");
     }
+    
+    public void test02() throws Exception {
+        System.setProperty("smtp.password", "hardcoded");
+    }
 }
